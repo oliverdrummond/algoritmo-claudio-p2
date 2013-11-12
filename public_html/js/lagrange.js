@@ -10,9 +10,7 @@ function lagrange() {
     var l2 = ((x - x1) * (x - x3)) / ((x2 - x1) * (x2 - x3));
     var l3 = ((x - x1) * (x - x2)) / ((x3 - x1) * (x3 - x2));
     var resultado = (fx1 * l1) + (fx2 * l2) + (fx3 * l3);
-    document.write(resultado);
-    console.log(resultado);
-    return resultado;
+    return resultado;dsfasdfa
 };
 
 

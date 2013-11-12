@@ -5,51 +5,48 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-
-        <form method="GET">
-            <table>
-                <tr>
-                    <td colspan="2" align="center">
-                        <b>Método de Lagrange</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        X1<input type="number" id="x1" value="-1">
-                    </td>
-                    <td>
-                        f(x1)<input type="number" id="fx1" value="4">
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        X2<input type="number" id="x2" value="0"><br>
-                    </td>
-                    <td> 
-                        f(x2)<input type="number" id="fx2" value="1"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        X3<input type="number" id="x3" value="2"><br> 
-                    </td>
-                    <td>
-                        f(x3)<input type="number" id="fx3" value="-1"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        X Desejado<input type="number" id="x" value="1"><br> 
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Calcular" id="calcular">
-                    </td>
-                </tr>
-            </table>
-            <div id="resultado"></div>
-        </form>
+        <table>
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Método de Lagrange</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    X1<input type="number" id="x1" value="-1">
+                </td>
+                <td>
+                    f(x1)<input type="number" id="fx1" value="4">
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    X2<input type="number" id="x2" value="0"><br>
+                </td>
+                <td> 
+                    f(x2)<input type="number" id="fx2" value="1"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    X3<input type="number" id="x3" value="2"><br> 
+                </td>
+                <td>
+                    f(x3)<input type="number" id="fx3" value="-1"><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    X Desejado<input type="number" id="x" value="1"><br> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="calcular">Calcular</button>
+                </td>
+            </tr>
+        </table>
+        <div id="resultado"></div>
         <script type="text/javascript" src="js/lagrange.js"></script>
         <script>
             document.getElementById('calcular').onclick = function() {
